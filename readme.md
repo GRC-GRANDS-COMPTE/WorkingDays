@@ -2,7 +2,7 @@
 Some of the classes we are working on. All piece of software here is intended to be generic.  
 Contribution is allowed and appreciated. See [Contibution guide](./contributing.md)
 
-##Licence
+## Licence
 GNU GPL V3
 
 ## LDA26\Dates
