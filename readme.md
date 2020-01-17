@@ -10,4 +10,4 @@ Set of classses provided to deal with dates.
 
 ### WorkingDays 
 Working on dates and delays (forward and backward).  
-Documentation [French](./LDA26/WorkingDays/doc/WorkingDays_FR.md) - [English](./LDA26/WorkingDays/doc/WorkingDays_EN.md)
+Documentation [French](./LDA26/Dates/WorkingDays/doc/WorkingDays_FR.md) - [English](./LDA26/Dates/WorkingDays/doc/WorkingDays_EN.md)
