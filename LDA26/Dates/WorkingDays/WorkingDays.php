@@ -4,8 +4,8 @@
  *
  *	file : WorkingDays.php
  *	author : La Drome laboratoire
- *	version: 2.1.0
- *	Date: 16/01/2020
+ *	version: 2.1.1
+ *	Date: 20/01/2020
  *	
  *	This class works on dates to determine 
  *		- is Weekend
@@ -287,7 +287,7 @@
 					$isBackward = $this->isBackward($date);
 					//calcul de la date de rendu brute
 					
-					$date_brute = $date[self::__OUT_TIMESTP] + ((intdiv($date[self::__IN_DLT], $nbJouvre) * self::__DAYSPERWEEK) + ($date[self::__IN_DLT] % $nbJouvre)) * self::__SECONDSPERDAY ;
+					$date_brute = $date[self::__OUT_TIMESTP] + ((intdiv($date[self::__IN_DLT], $nbJouvre) * self::__DAYSPERWEEK) + ($date[self::__IN_DLT] % $nbJouvre) + (($isBackward) ? -2 : 0)) * self::__SECONDSPERDAY ;
 					
 					//détermination du nombre de jours féries entre la date de départ et la date brute.
 					if (!in_array($date[self::__OUT_TIMESTP], $publicHolidays)) $publicHolidays[] = $date[self::__OUT_TIMESTP];
