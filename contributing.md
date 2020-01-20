@@ -1,4 +1,4 @@
-#Contribution to La Drome Laboratoire
+# Contribution guide
 
 The classes provided here are free to uses and provided without any warranty (see [License](./LICENCE) ). Contribution is usual in opensource software. As a consequence, you are free to bring your help.
 
@@ -22,3 +22,6 @@ Please describe your need using the issue tracker. However, there is no warranty
 
 #### Bring your features
 Please use a pull request with a full decription of the feature your are bringing. One PR per feature please.
+
+### Writing
+feel free to improve documentation and/or translations
