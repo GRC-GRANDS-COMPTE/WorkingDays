@@ -2,10 +2,10 @@
 
 Cette classe est née des deux cas d'usage suivants :
  * Quelle est la date de rendu des échantillons reçus aujourd'hui avec ce délai ?
- * Nous venons de rendre les échantillons suivants. Avons nous respecté le délai ?
-Cela implique de pouvoir calculer une date future ou passée en tenant compte des jours ouvrés et fériés.
+ * Nous venons de rendre les échantillons suivants. Avons nous respecté le délai ?  
+Cela implique de pouvoir calculer une date, future ou passée, en tenant compte des jours ouvrés et fériés.
 
-Cette classe PHP abstraite propose de la manipulation de dates avec les capacités suivantes :
+Cette classe PHP propose de la manipulation de dates avec les capacités suivantes :
  * Vérification du statut de la date (week-end et/ou jour férié)
  * Calcul du précédent/prochain jour ouvré
  * Calcul d'un délai en fonction d'un nombre de jour en tenant compte des jours ouvrés. Cela fonctionne avec un délai négatif
@@ -42,8 +42,8 @@ Lorsque le délai est à 0, le calcul du délai renvoie le précédent jour ouvr
 
 Performance calculée :
 > 1200 dates à calculer  
-> Délai est un tirage aléatoire entre 20 et 4000 jours  
-> Temps exécution : **0.109 secondes**  
+> Délai est un tirage aléatoire entre -2500 et 2500 jours  
+> Temps exécution : 0.109 secondes  
 
 ## Todo list
  * utiliser PHPUnit
@@ -55,7 +55,7 @@ Performance calculée :
 ````php
  array[]['date'] = 'YYYY-MM-DD';
  array[]['dlt'] = 'délai en jour ouvré, peut être négatif';
- array[]['label'] = 'Toute donnée utile dans un autre process. Renvoyé tel que reçu';
+ array[]['label'] = 'Toute donnée utile dans un autre process. Renvoyé telle que reçue';
 ````
 
 ### Resultat
@@ -119,4 +119,3 @@ string 'Le 2020-01-10 est travaillé: oui' (length=33)
 
 
 ````
-
